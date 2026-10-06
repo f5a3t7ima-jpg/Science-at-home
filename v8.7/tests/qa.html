@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Science at Home validation</title><style>body{margin:0;font:15px Arial;background:#173c3c;color:white}header{padding:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}button{font:inherit;padding:7px 12px;cursor:pointer}iframe{border:0;width:100%;height:calc(100vh - 54px)}#report{position:fixed;top:58px;right:8px;background:#fff;color:#233c44;padding:12px;max-width:420px;max-height:75vh;overflow:auto;box-shadow:0 4px 20px #0005;white-space:pre-wrap}#report:empty{display:none}</style></head><body>
+<header><b>Validation</b><button id="run">Run checks</button><button id="bedroom">Bedroom</button><button id="majlis">Majlis</button><button id="yard">Courtyard</button><button id="paper">Paper reminder</button><button id="question">Question</button><button id="finish">Early finish</button><button id="hide">Hide report</button></header>
+<iframe id="game" src="../index.html?qa=1&class=5F&group=6"></iframe><pre id="report"></pre>
+<script>
+const frame=document.querySelector('#game'),report=document.querySelector('#report'),delay=n=>new Promise(r=>setTimeout(r,n));
+const state=()=>({win:frame.contentWindow,g:frame.contentWindow.ScienceGame,doc:frame.contentDocument});
+function start(){const {g,doc}=state();g.config.muted=true;if(!g.S.started){doc.querySelector('[data-action=ready]').click();doc.querySelector('[data-action=agree]').click();doc.querySelector('[data-action=start]').click();}g.S.paused=true;g.stopSpeech();return state();}
+function step(scene,type){const {g}=start();g.beginScene(scene);const i=g.S.sequence.findIndex(x=>x.type===type);if(i<0)throw Error('Missing step '+type);g.S.step=i;g.resume();g.S.paused=true;g.stopSpeech();return state();}
+document.querySelector('#hide').onclick=()=>report.textContent='';
+document.querySelector('#bedroom').onclick=()=>{const {g,doc}=start();doc.querySelector('#overlay').innerHTML='';g.world.setZone(0,[7.45,-10.15]);g.world.free();report.textContent='Hessa in bedroom';};
+document.querySelector('#majlis').onclick=()=>{const {g}=step(0,'line');report.textContent='Grandma, Grandpa and one Hamad in majlis';};
+document.querySelector('#yard').onclick=()=>{const {g}=step(3,'line');g.world.setZone(2,[8.3,7.8]);g.world.talk('Mom');report.textContent='Hamad with Mother in courtyard';};
+document.querySelector('#paper').onclick=()=>{step(0,'notebook');report.textContent='Maha paper reminder';};
+document.querySelector('#question').onclick=()=>{step(0,'q');report.textContent='Question and answer colours';};
+document.querySelector('#finish').onclick=()=>{const {g}=start();g.S.done=[1,2,3,4,5];g.S.elapsed=390;g.openExploreMenu();g.S.paused=true;report.textContent='Centered early-finish menu';};
+document.querySelector('#run').onclick=async()=>{
+ const results=[];const check=(name,ok,detail='')=>{results.push({name,ok:!!ok,detail});report.textContent=JSON.stringify(results,null,2);if(!ok)throw Error(name+' '+detail)};
+ try{
+ const {win,g,doc}=start();check('Six supplied family models loaded',win.characterLoadStatus?.loaded===6,JSON.stringify(win.characterLoadStatus));
+ check('One Hamad and no Sister actor',g.world.family.filter(a=>a.userData.name==='Brother').length===1&&!g.world.family.some(a=>a.userData.name==='Sister'));
+ for(let group=1;group<=6;group++){
+  g.setConfig({...g.config,group,muted:true});g.S.started=true;g.S.paused=true;
+  for(let scene=0;scene<5;scene++){
+   step(scene,'q');const q=g.Q;const wrong=q.choices.findIndex(x=>x.value!==q.answer),right=q.choices.findIndex(x=>x.value===q.answer);
+   const buttons=[...doc.querySelectorAll('[data-action=answer]')];buttons[wrong].click();check('Wrong answer red '+group+'/'+scene,buttons[wrong].classList.contains('incorrect'));
+   buttons[right].click();check('Correct answer green '+group+'/'+scene,buttons[right].classList.contains('correct')&&g.S.answers[q.id].correct);
+  }
+ }
+ step(0,'notebook');check('Maha with original paper task',!!doc.querySelector('.maha-paper img')&&doc.querySelector('.notebook').textContent.includes('Now it is time to write'));
+ g.beginScene(0);const hamad=g.world.family.find(a=>a.userData.name==='Brother');check('Hamad in majlis',hamad.parent===g.world.zones[1]);g.beginScene(3);check('Same Hamad outdoors',hamad.parent===g.world.zones[2]);
+ g.S.elapsed=390;g.S.done=[1,2,3,4,5];g.openExploreMenu();g.S.paused=true;const r=doc.querySelector('.finish-menu').getBoundingClientRect();check('Menu centered',Math.abs((r.x+r.width/2)-win.innerWidth/2)<3&&Math.abs((r.y+r.height/2)-win.innerHeight/2)<3);
+ check('All early-finish choices present',['practice','discoveries','gallery'].every(a=>doc.querySelector('.finish-menu [data-action='+a+']')));
+ doc.querySelector('.finish-menu [data-action=practice]').click();check('Practice opens',!!doc.querySelector('#practice-feedback'));doc.querySelector('[data-action=close-modal]').click();check('Close returns to choice menu',!!doc.querySelector('.finish-menu'));
+ check('No placeholder characters remain',g.world.family.every(a=>!!a.userData.model));
+ report.textContent='PASS: '+results.length+' checks\n'+JSON.stringify(results,null,2);
+ }catch(error){report.textContent+='\nFAIL: '+error.stack;}
+};
+</script></body></html>
