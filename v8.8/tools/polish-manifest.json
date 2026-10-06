@@ -88,5 +88,10 @@
     "before": "t.userData.sitting=!0,t.rotation.y=0)}}setPose",
     "after": "t.userData.sitting=[\"Grandma\",\"Grandpa\",\"Brother\"].includes(t.userData.name),t.rotation.y=t.userData.name===\"Brother\"?-Math.PI/2:0)}window.CharacterModels?.prepareScene(this,4)}setPose",
     "occurrences": 1
+  },
+  {
+    "before": "E.textContent=P?.portal?\"Next: \"+P.label:\"Next: \"+Qe[c.scene].family",
+    "after": "E.textContent=window.ScienceUI.route()",
+    "occurrences": 1
   }
 ]

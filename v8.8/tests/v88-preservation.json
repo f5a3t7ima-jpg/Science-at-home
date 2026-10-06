@@ -1,0 +1,14 @@
+{
+  "baseline": "V8.7",
+  "checks": {
+    "house": true,
+    "interior": true,
+    "practice questions": true,
+    "speed questions": true,
+    "challenge questions": true,
+    "photo-data.js": true,
+    "voice-data.js": true,
+    "only scoped V8.8 game changes": true
+  },
+  "result": "pass"
+}

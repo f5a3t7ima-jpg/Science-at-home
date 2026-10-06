@@ -122,7 +122,7 @@
       title.insertAdjacentHTML('afterbegin','<div class="campaign-line" lang="ar" dir="rtl">بالميثاق نبلغ الآفاق</div>');
       title.querySelector('.hero-picture')?.insertAdjacentHTML('afterend',`<div class="school-credit"><div lang="ar" dir="rtl"><strong>مدرسة أم الفضل بنت الحارث الحلقة 2</strong><span>قسم العلوم</span><span>إعداد المعلمة: فاطمة عبدالرحمن الربيح المصعبي</span></div><div><strong>Um Al Fadhel Bint Al Hareth C2</strong><span>Department of Science</span><span>Teacher: Fatima Al Rubaih</span></div></div>`);
     }
-    for(const el of document.querySelectorAll('.question-prompt p,.question-text,.challenge-question,.modal h2,.modal h3')){
+    for(const el of document.querySelectorAll('.question-prompt p,.question-text,.challenge-question,.challenge-panel h2,.challenge-panel .subtext,.practice-q,.modal h2,.modal h3,.modal p')){
       const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),texts=[];let node;
       while(node=walker.nextNode())if(!node.parentElement.closest('button,strong,svg,.science-keyword'))texts.push(node);
       for(const node of texts){

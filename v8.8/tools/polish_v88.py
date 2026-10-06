@@ -47,6 +47,8 @@ if(!window.CharacterModels?.startSharing(x,callbacks)){
 replace('function qt(){',sharing+'function qt(){')
 # Don't move the grandparents off their cushions for the family challenge.
 replace('t.userData.sitting=!0,t.rotation.y=0)}}setPose', 't.userData.sitting=["Grandma","Grandpa","Brother"].includes(t.userData.name),t.rotation.y=t.userData.name==="Brother"?-Math.PI/2:0)}window.CharacterModels?.prepareScene(this,4)}setPose')
+# One route label owner prevents the old half-second HUD refresh from flickering.
+replace('E.textContent=P?.portal?"Next: "+P.label:"Next: "+Qe[c.scene].family','E.textContent=window.ScienceUI.route()')
 # The original lab/photo/scoring banks are untouched.
 game=game.replace('V8.7','V8.8');p.write_text(game)
 html=(ROOT/'index.html').read_text().replace('V8.7','V8.8')
