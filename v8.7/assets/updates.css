@@ -9,10 +9,10 @@
 .choices button:disabled.correct,.choices button:disabled.incorrect{opacity:1!important}
 #controls{display:none!important}
 .helper-portrait{width:88px;height:104px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 4px 3px #243c4424)}
-#helper-rail{position:fixed;left:18px;bottom:14px;display:flex;gap:7px;z-index:35;width:250px}
-#helper-rail button{padding:4px 5px 7px;width:78px;min-height:80px;display:flex;align-items:center;flex-direction:column;border-radius:16px;border:1px solid #d6d6c6;background:#fffaf1;box-shadow:0 4px 18px #233c4415}
+#helper-rail{position:fixed;left:16px;bottom:14px;display:flex;gap:5px;z-index:35;width:max(165px,calc(var(--left) - 32px))}
+#helper-rail button{padding:4px 3px 7px;flex:1;min-width:0;min-height:80px;display:flex;align-items:center;flex-direction:column;border-radius:16px;border:1px solid #d6d6c6;background:#fffaf1;box-shadow:0 4px 18px #233c4415}
 #helper-rail button:hover{border-color:#31836f;transform:translateY(-2px)}
-#helper-rail .helper-portrait{width:52px;height:54px}
+#helper-rail .helper-portrait{width:52px;max-width:100%;height:54px}
 #helper-rail span{font-size:14px;font-weight:750;line-height:1.2}
 .helper-message{position:fixed;left:285px;bottom:110px;z-index:65;display:flex;align-items:center;gap:18px;max-width:min(650px,calc(100vw - 620px));background:#fffdf4;border:2px solid #acbfa3;border-radius:24px;padding:18px 44px 18px 14px;box-shadow:0 12px 46px #203b4040;animation:helper-in .24s ease-out}
 .helper-message strong{font-size:18px;color:#357163}.helper-message p{font-size:24px;line-height:1.35;margin:4px 0 0}
