@@ -1,0 +1,172 @@
+[
+  {
+    "before": "this.person(\"Sister\",\"#e6bf4d\",\"sister\",e,11.5,0,4.4),",
+    "after": "",
+    "occurrences": 1
+  },
+  {
+    "before": "title:\"My sister's ice melts\",family:\"Sister\"",
+    "after": "title:\"Hamad's ice melts\",family:\"Brother\"",
+    "occurrences": 1
+  },
+  {
+    "before": "Please share with your sister.",
+    "after": "Please share with Hamad.",
+    "occurrences": 1
+  },
+  {
+    "before": "let s=[\"Mom & Dad\",\"My sister\",\"My brother\",\"Bathroom\"]",
+    "after": "let s=[\"Mom & Dad\",\"Hamad\",\"Family room\",\"Bathroom\"]",
+    "occurrences": 1
+  },
+  {
+    "before": "y===\"Me\"?\"Mariam\":s(y)",
+    "after": "window.ScienceUI.label(y)",
+    "occurrences": 1
+  },
+  {
+    "before": "g===\"Me\"?\"Mariam\":g===\"Question\"",
+    "after": "g===\"Me\"?\"Hessa\":g===\"Question\"",
+    "occurrences": 1
+  },
+  {
+    "before": "c.phase=\"scene\",c.scene=y,c.step=0,c.sceneStart=c.elapsed;",
+    "after": "c.phase=\"scene\",c.scene=y,c.step=0,c.sceneStart=c.elapsed;window.CharacterModels?.prepareScene(x,y);",
+    "occurrences": 1
+  },
+  {
+    "before": "c=Ie,c.paused=!1,ze(),ne(!0)",
+    "after": "c=Ie,c.paused=!1,ze(),window.CharacterModels?.prepareScene(x,c.scene),ne(!0)",
+    "occurrences": 1
+  },
+  {
+    "before": "c.started&&!c.paused&&!b&&!i(\"#extra\").textContent&&x.mode",
+    "after": "c.started&&!c.paused&&!b&&!i(\"#extra\").textContent&&!i(\".finish-backdrop\")&&x.mode",
+    "occurrences": 1
+  },
+  {
+    "before": "n=\"ScienceAtHome-v7.1-\"",
+    "after": "n=t.has(\"qa\")?\"ScienceAtHome-qa-\":\"ScienceAtHome-v7.1-\"",
+    "occurrences": 1
+  },
+  {
+    "before": "let l=o.userData,h=this.clock+l.phase,u=o===this.player;",
+    "after": "let l=o.userData;if(l.model){window.CharacterModels.update(this,o,n,s);continue}let h=this.clock+l.phase,u=o===this.player;",
+    "occurrences": 1
+  },
+  {
+    "before": "ye=!0,setTimeout(()=>{ze(),x?.warm(),Re=!0,ye=!1;",
+    "after": "ye=!0,setTimeout(async()=>{ze(),x?.warm();await window.CharacterModelsReady;const modelStatus=await window.CharacterModels?.loadAll(x);if(modelStatus?.failed.length)C(\"Some characters could not load. Refresh to try again.\",8);Re=!0,ye=!1;",
+    "occurrences": 1
+  },
+  {
+    "before": "let ae=Y.value===P.answer,Ie=",
+    "after": "let ae=Y.value===P.answer;window.ScienceUI.feedback(e(\".choices button\")[y],ae);let Ie=",
+    "occurrences": 1
+  },
+  {
+    "before": "Ue(),E.tries=(E.tries||0)+(P?1:0);",
+    "after": "Ue();if(P)window.ScienceUI.feedback(e(\".choices button\")[y],Y);E.tries=(E.tries||0)+(P?1:0);",
+    "occurrences": 1
+  },
+  {
+    "before": "b=i(\"#practice-feedback\");if(ge(",
+    "after": "b=i(\"#practice-feedback\");window.ScienceUI.feedback(e(\"[data-action=practice-answer]\").find(n=>n.dataset.value===String(v)),ok);if(ge(",
+    "occurrences": 1
+  },
+  {
+    "before": "b=i(\"#speed-feedback\");c.spLock=",
+    "after": "b=i(\"#speed-feedback\");window.ScienceUI.feedback(e(\"[data-action=speed-answer]\").find(n=>n.dataset.value===String(v)),ok);c.spLock=",
+    "occurrences": 1
+  },
+  {
+    "before": "(Ie===0?Y===(Ee.chemical?\"chemical\":\"physical\"):String(Ee.answer)===Y)?Ie===0?Je(c.discovery,1):(c.discoveries.includes(Ee.id)||c.discoveries.push(Ee.id),ge(\"discovery\",{item:Ee.id}),C(\"Explorer sticker saved!\"),i(\"#extra\").innerHTML=\"\",Oe(Ee.reason)):(i(\"#discovery-feedback\").textContent=\"Try again. Look carefully at what changed.\",Oe(\"Try again. Look carefully at what changed.\",null,!0))",
+    "after": "const correct=Ie===0?Y===(Ee.chemical?\"chemical\":\"physical\"):String(Ee.answer)===Y;window.ScienceUI.feedback(E,correct);if(correct){e(\"#extra .choices button\").forEach(button=>button.disabled=!0);const discoveryIndex=c.discovery;setTimeout(()=>{if(c.phase!==\"explore\"||!i(\"#discovery-feedback\")||c.discovery!==discoveryIndex)return;if(Ie===0)Je(discoveryIndex,1);else{c.discoveries.includes(Ee.id)||c.discoveries.push(Ee.id);ge(\"discovery\",{item:Ee.id});C(\"Explorer sticker saved!\");i(\"#extra\").innerHTML=\"\";Oe(Ee.reason)}},800)}else{i(\"#discovery-feedback\").textContent=\"Try again. Look carefully at what changed.\";Oe(\"Try again. Look carefully at what changed.\",null,!0)}",
+    "occurrences": 1
+  },
+  {
+    "before": "Le('<section class=\"dock dialogue\"><h2>Explore the house! Check your paper.</h2><p id=\"explore-countdown\"></p><div class=\"row\"><button class=\"primary\" data-action=\"practice\">Practice \\u2605</button><button data-action=\"discoveries\">Discover more</button><button data-action=\"gallery\">Look again</button></div></section>')",
+    "after": "Le(window.ScienceUI.finishMenu(\"Family Challenge in \"+l(Z()-c.elapsed)));requestAnimationFrame(()=>i(\".finish-menu [data-action=practice]\")?.focus())",
+    "occurrences": 1
+  },
+  {
+    "before": "c.phase===\"explore\"&&!i(\"#extra\").textContent&&!L?.busy&&!d&&c.elapsed<Z()-8&&c.elapsed-Math.max(c.exploreStart||0,c.prClosed||0)>(c.prClosed?15:5)&&prOpen();",
+    "after": "",
+    "occurrences": 1
+  },
+  {
+    "before": "else if(P===\"practice\")prOpen();",
+    "after": "else if(P===\"keep-exploring\"){Le('<div class=\"walk-tip\">Click the floor to walk. <button class=\"small\" data-action=\"explore-menu\">Choose an activity</button></div>');x?.free()}else if(P===\"explore-menu\")O();else if(P===\"practice\")prOpen();",
+    "occurrences": 1
+  },
+  {
+    "before": "${SAQR_SVG}<div class=\"saqr-bubble\"><b>Saqr AI</b>",
+    "after": "${window.ScienceUI.portrait(\"fahem\")}<div class=\"saqr-bubble\"><b>Fahem \u00b7 Science helper</b>",
+    "occurrences": 1
+  },
+  {
+    "before": "Saqr AI noticed",
+    "after": "Fahem noticed",
+    "occurrences": 1
+  },
+  {
+    "before": "Saqr AI: soda is a chemical change.",
+    "after": "Fahem thinks: soda is a chemical change.",
+    "occurrences": 1
+  },
+  {
+    "before": "Saqr AI thinks: change in color.",
+    "after": "Fahem thinks: change in color.",
+    "occurrences": 1
+  },
+  {
+    "before": "Is Saqr AI right?",
+    "after": "Is Fahem right?",
+    "occurrences": 1
+  },
+  {
+    "before": "Saqr helps. Review all five signs.",
+    "after": "Fahem helps. Review all five signs.",
+    "occurrences": 1
+  },
+  {
+    "before": "Saqr AI is an offline, rule-based helper.",
+    "after": "Fahem gives preset science hints. Shaheen guides the route. Maha reminds the team to write on paper.",
+    "occurrences": 1
+  },
+  {
+    "before": "The page makes no network requests. Edge natural speech needs internet.",
+    "after": "Characters load from this game's assets. Original voices are included. Additional device speech may need internet.",
+    "occurrences": 1
+  },
+  {
+    "before": "Original procedural art and textures. Three.js: MIT license.",
+    "after": "Original house, lesson pictures and recordings; supplied character models. Three.js: MIT license.",
+    "occurrences": 1
+  },
+  {
+    "before": "<div class=\"page\"><p class=\"eyebrow\">Our group paper",
+    "after": "<div class=\"page\"><div class=\"maha-paper\">${window.ScienceUI.portrait(\"maha\")}<div><strong>Maha \u00b7 Paper time</strong><p>Now it is time to write on your group paper.</p></div></div><p class=\"eyebrow\">Our group paper",
+    "occurrences": 1
+  },
+  {
+    "before": "<h2>Write in your paper!</h2>",
+    "after": "<h2>Recorder, write. Team, help!</h2>",
+    "occurrences": 1
+  },
+  {
+    "before": "i(\"#extra\").innerHTML=\"\",c.phase===\"explore\"&&(c.prClosed=c.elapsed)",
+    "after": "i(\"#extra\").innerHTML=\"\",c.phase===\"explore\"&&(c.prClosed=c.elapsed,O())",
+    "occurrences": 1
+  },
+  {
+    "before": "beginScene:Q,points:B,challengeItem:sh,answer:ns,challengeAnswer:de",
+    "after": "beginScene:Q,points:B,challengeItem:sh,answer:ns,challengeAnswer:de,openExploreMenu:O,requestHint:mi",
+    "occurrences": 1
+  },
+  {
+    "before": "),g0(Xt),i(\"#loading\")?.remove()",
+    "after": "),window.ScienceGame=Xt,window.ScienceUI.init(Xt),g0(Xt),i(\"#loading\")?.remove()",
+    "occurrences": 1
+  }
+]
