@@ -74,7 +74,15 @@ function attach(world, actor, gltf, height) {
   const sitClip = gltf.animations.find(a => a.name === 'Sit_Cross_Legged_on_Floor');
   const walk = walkClip ? mixer.clipAction(inPlace(walkClip, root)) : null;
   const sit = sitClip ? mixer.clipAction(inPlace(sitClip, root)) : null;
-  idle.play();
+  let sitFloorOffset = 0;
+  if (sit) {
+    sit.play(); sit.time = Math.min(sit.getClip().duration * .6, 2); sit.paused = true;
+    mixer.update(0); root.updateMatrixWorld(true);
+    root.traverse(node => { if (node.isSkinnedMesh) node.computeBoundingBox(); });
+    sitFloorOffset = -new THREE.Box3().setFromObject(root).min.y;
+    sit.stop();
+  }
+  idle.play(); mixer.update(0);
   const head = bones.find(b => /Head$/.test(b.name));
   actor.clear();
   actor.scale.setScalar(1);
@@ -84,7 +92,7 @@ function attach(world, actor, gltf, height) {
   actor.add(anchor);
   actor.userData.head = anchor;
   actor.userData.unit = 1;
-  actor.userData.model = { root, visual, mixer, idle, walk, sit, head, height, action: idle, pose: 'idle' };
+  actor.userData.model = { root, visual, mixer, idle, walk, sit, sitFloorOffset, head, height, action: idle, pose: 'idle' };
   actors.add(actor);
   world.renderer.shadowMap.needsUpdate = true;
 }
@@ -111,6 +119,7 @@ function update(world, actor, dt, walking) {
   pose(model, seated ? 'sit' : actor === world.player && walking ? 'walk' : 'idle');
   if (model.walk) model.walk.setEffectiveTimeScale(Math.max(.7, Math.min(1.5, (world.walkSpeed || 1.3) / 1.3)));
   model.mixer.update(dt);
+  model.visual.position.y = seated ? model.sitFloorOffset : 0;
   // The imported seated animations rest on the existing majlis cushions.
   if (actor !== world.player) actor.position.y = actor.parent === world.zones[0] ? 5 : seated ? .44 : 0;
   if (model.head) {
