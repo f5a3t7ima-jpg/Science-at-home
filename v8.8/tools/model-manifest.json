@@ -1,0 +1,120 @@
+[
+  {
+    "model": "hessa",
+    "source": "Meshy_AI_Hessa_All_Animations.glb",
+    "sourceBytes": 16849272,
+    "gameBytes": 1787836,
+    "sourceSHA256": "b44438ae3f4bd5cf4412fbce1c571c163fea42aa383278a401ee2ceef60d891c",
+    "animations": [
+      "Running",
+      "Walking",
+      "Walking_Woman"
+    ]
+  },
+  {
+    "model": "hamad",
+    "source": "Meshy_AI_Hamad_All_Animations (1).glb",
+    "sourceBytes": 18019972,
+    "gameBytes": 2330664,
+    "sourceSHA256": "490e8eff5d9859005f5523f86f2eb55f8c757dc791ac7957a8e27fef8ee2a94c",
+    "animations": [
+      "Running",
+      "Walking",
+      "Sit_Cross_Legged",
+      "Sit_Thumbs_Up_Right",
+      "Sitting_Answering_Questions"
+    ]
+  },
+  {
+    "model": "mother",
+    "source": "Meshy_AI_Mother_Character_Desi_All_Animations.glb",
+    "sourceBytes": 16216060,
+    "gameBytes": 1770900,
+    "sourceSHA256": "915bbf6f605c44fe24a06c03e6a5d5dcf243a3fac39d176e600e4118e768a063",
+    "animations": [
+      "Running",
+      "Walking",
+      "Walking_Woman"
+    ]
+  },
+  {
+    "model": "father",
+    "source": "Meshy_AI_Khalid_\u2014_Father_All_Animations.glb",
+    "sourceBytes": 15930836,
+    "gameBytes": 1664044,
+    "sourceSHA256": "18f8f5baac04425967598f945e8a93eaaac74f124f164f42558e588369faa52d",
+    "animations": [
+      "Running",
+      "Walking"
+    ]
+  },
+  {
+    "model": "grandma",
+    "source": "Meshy_AI_Golden_Veil_Grandma_All_Animations (2).glb",
+    "sourceBytes": 16561024,
+    "gameBytes": 2388060,
+    "sourceSHA256": "b015ecaa3ad54952c7ce279b0e5232b206ae7b1eda201dbe7356ae9dbe1e0474",
+    "animations": [
+      "Running",
+      "Walking",
+      "Walking_Woman",
+      "Sit_Cross_Legged_on_Floor",
+      "Sitting_Answering_Questions",
+      "Walk_to_Sit",
+      "Sitting_Clap"
+    ]
+  },
+  {
+    "model": "grandpa",
+    "source": "Meshy_AI_Grandfather_Character_All_Animations (2).glb",
+    "sourceBytes": 16323512,
+    "gameBytes": 2119484,
+    "sourceSHA256": "67a215ad87aceb5ed321a6ffd5a07f92bdd61b2bdc88bc2576015ff9785d8375",
+    "animations": [
+      "Running",
+      "Walking",
+      "Sit_Cross_Legged_on_Floor",
+      "Sit_Thumbs_Up_Right",
+      "Sitting_Answering_Questions"
+    ]
+  },
+  {
+    "model": "fahem",
+    "source": "Meshy_AI_Fahem_the_Friendly_Ec_All_Animations (1).glb",
+    "sourceBytes": 18441580,
+    "gameBytes": 1601092,
+    "sourceSHA256": "0511b723808d48222429b6736c6dbea1b1f4f336be3dbd56c94af1d5a856cc7a",
+    "animations": [
+      "Running",
+      "Walking"
+    ]
+  },
+  {
+    "model": "shaheen",
+    "source": "Meshy_AI_Character_output (1).glb",
+    "sourceBytes": 18648396,
+    "gameBytes": 1461120,
+    "sourceSHA256": "08f50b206fdb020cddf63f785bbe78e0051d7f36ef262e67381516b618fc55ec",
+    "animations": []
+  },
+  {
+    "model": "maha",
+    "source": "Meshy_AI_Maha_quadruped_Character_output.glb",
+    "sourceBytes": 15992356,
+    "gameBytes": 10011828,
+    "sourceSHA256": "660b16f5c18b908c3c3fe74153823f239933ccfb82f20ca2d751128d95e6b7f1",
+    "animations": [
+      "Armature|clip0|baselayer"
+    ]
+  },
+  {
+    "model": "maha-walking",
+    "source": "Meshy_AI_Maha_quadruped_model_Animation_Walking_withSkin.glb",
+    "sourceBytes": 16005708,
+    "gameBytes": 10025180,
+    "sourceSHA256": "87aa4b60e8f271268e3c5ad1a787bf31f6a344784577455220b97378d2adb039",
+    "animations": [
+      "Armature|Unreal Take|baselayer"
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+/* Clear feedback at every answer stage, with a symbol as well as colour. */
+.choices button.incorrect,.choices button.incorrect:hover{background:#b82732!important;border-color:#841823!important;color:#fff!important;opacity:1!important}
+.choices button.correct,.choices button.correct:hover{background:#237745!important;border-color:#155b32!important;color:#fff!important;opacity:1!important}
+.choices button.incorrect *,.choices button.correct *{color:inherit!important}
+.choices button.answer-selected:after{content:'✕';font-weight:800;font-size:25px;margin-left:auto;padding-left:8px;flex-shrink:0}
+.choices button.answer-selected.correct:after{content:'✓'}
+.question-prompt p:first-of-type{font-size:clamp(29px,2.2vw,38px)!important;line-height:1.25!important;font-weight:650}
+.challenge-panel h2,.practice-q{font-size:clamp(29px,2.2vw,38px)!important;line-height:1.25}
+.choices button:disabled.correct,.choices button:disabled.incorrect{opacity:1!important}
+#controls{display:none!important}
+.helper-portrait{width:88px;height:104px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 4px 3px #243c4424)}
+#helper-rail{position:fixed;left:16px;bottom:14px;display:flex;gap:5px;z-index:35;width:max(165px,calc(var(--left) - 32px))}
+#helper-rail button{padding:4px 3px 7px;flex:1;min-width:0;min-height:80px;display:flex;align-items:center;flex-direction:column;border-radius:16px;border:1px solid #d6d6c6;background:#fffaf1;box-shadow:0 4px 18px #233c4415}
+#helper-rail button:hover{border-color:#31836f;transform:translateY(-2px)}
+#helper-rail .helper-portrait{width:52px;max-width:100%;height:54px}
+#helper-rail span{font-size:14px;font-weight:750;line-height:1.2}
+.helper-message{position:fixed;left:285px;bottom:110px;z-index:65;display:flex;align-items:center;gap:18px;max-width:min(650px,calc(100vw - 620px));background:#fffdf4;border:2px solid #acbfa3;border-radius:24px;padding:18px 44px 18px 14px;box-shadow:0 12px 46px #203b4040;animation:helper-in .24s ease-out}
+.helper-message strong{font-size:18px;color:#357163}.helper-message p{font-size:24px;line-height:1.35;margin:4px 0 0}
+.helper-dismiss{position:absolute;top:6px;right:6px;min-height:30px;min-width:30px;padding:0;border:0;box-shadow:none;font-size:24px;background:transparent}
+.shaheen-route{display:flex!important;align-items:center;gap:14px;text-align:left!important;padding:10px 18px!important}
+.shaheen-route .helper-portrait{height:76px;width:64px}.shaheen-route strong{font-size:23px;line-height:1.25;flex:1}.shaheen-route button{flex-shrink:0}
+.saqr-pop .helper-portrait{height:170px;width:125px}.saqr-pop .saqr-bubble b{font-size:20px}
+.maha-paper{display:flex;gap:14px;align-items:center;background:#e8f1e1;border:1px solid #c6d6b9;border-radius:18px;padding:10px 16px;margin:-10px -10px 18px}
+.maha-paper .helper-portrait{width:75px;height:88px}.maha-paper strong{font-size:19px;color:#357163}.maha-paper p{margin:5px 0 0;font-size:25px;font-weight:750;line-height:1.2}
+.finish-backdrop{position:fixed;inset:0;background:#263c3a55;display:flex;align-items:center;justify-content:center;padding:24px;z-index:45}
+.finish-menu{width:min(820px,calc(100vw - 70px));max-height:90vh;overflow:auto;padding:30px;background:#fffaf0;border:2px solid #fff;border-radius:28px;box-shadow:0 24px 100px #1d33394d;text-align:center}
+.finish-heading{display:flex;align-items:center;text-align:left;gap:20px}.finish-heading h2{font-size:32px;margin:0;line-height:1.15}.finish-heading .eyebrow{font-size:13px;margin-bottom:8px;letter-spacing:1.2px;color:#478171}
+.finish-instruction{font-size:24px;margin:20px 0}.finish-choices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.finish-choices button{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:164px;padding:16px 10px;border-radius:20px;border:2px solid #c5d5c6;background:#f1f5e9}
+.finish-choices button.primary{background:#2a705f;border-color:#2a705f;color:white}.finish-choices button>span{font-size:34px;line-height:1.1;margin-bottom:10px}.finish-choices strong{font-size:24px;white-space:nowrap}.finish-choices small{font-size:17px;font-weight:400;margin-top:8px}
+.finish-menu #explore-countdown{font-size:19px;color:#5c7067;margin:20px 0 12px}.explore-walk{border:0;box-shadow:none;text-decoration:underline;background:transparent}
+.helper-intro{display:flex;gap:12px;margin:16px 0;font-size:17px}.helper-intro>div{flex:1;display:flex;gap:8px;align-items:center}.helper-intro .helper-portrait{height:58px;width:45px}
+body[data-phase=explore] #notebook-button{display:none!important}
+@keyframes helper-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-height:750px){.question-prompt p:first-of-type{font-size:30px!important}.helper-message{bottom:106px}.finish-menu{padding:22px}.finish-choices button{min-height:138px}.finish-heading .helper-portrait{height:85px}.notebook .page{padding:20px}.maha-paper{margin:-7px -7px 10px}.maha-paper .helper-portrait{height:65px}.maha-paper p{font-size:23px}}
+@media(max-width:1050px){#helper-rail{left:10px;width:192px;gap:4px}#helper-rail button{width:61px}#helper-rail .helper-portrait{width:42px;height:44px}#helper-rail span{font-size:12px}.helper-message{left:210px;max-width:calc(100vw - 480px);gap:8px;padding-left:8px}.helper-message p{font-size:20px}.helper-message .helper-portrait{width:60px}.shaheen-route strong{font-size:20px}.shaheen-route .helper-portrait{height:60px;width:46px}}
+@media(prefers-reduced-motion:reduce){.helper-message{animation:none}#helper-rail button:hover{transform:none}}
+@media print{#helper-rail,.helper-message,.finish-backdrop{display:none!important}}
+
+/* V8.8: the supplied school identity and the Ministry's original Charter icons. */
+.cover-layout{width:min(1180px,96vw);display:grid;grid-template-columns:minmax(0,1.8fr) minmax(290px,1fr);gap:22px;align-items:center;margin:auto}
+.cover-layout .title-card{width:100%;max-width:none;padding:24px 30px;margin:0;text-align:center}
+.cover-layout .title-card h1{font-size:clamp(30px,3.1vw,45px);margin:8px 0 2px}
+.campaign-line{font-size:27px;font-weight:800;color:#721c2e;margin-bottom:10px;font-family:Tahoma,Arial,sans-serif}
+.cover-layout .title-line{margin:4px 0 10px;font-size:20px}
+.cover-layout .hero-picture{height:120px;margin:6px auto;overflow:hidden}
+.cover-layout .hero-picture svg{height:120px;width:auto;max-width:100%}
+.cover-layout .pickers{margin:12px auto 8px;gap:7px}
+.cover-layout .pick{padding:6px 11px;min-height:34px;font-size:14px}
+.cover-layout .names{margin:8px auto;font-size:13px;gap:5px}
+.cover-layout .names span{padding:4px 7px}
+.cover-layout .title-card h2{font-size:20px;margin:8px 0}
+.cover-layout .title-card>.row{justify-content:center}
+.cover-layout .title-card>p{margin:8px 0;font-size:16px}
+.school-credit{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px 0;margin:8px 0;border-top:1px solid #c7b79a;border-bottom:1px solid #c7b79a;color:#344344}
+.school-credit div{display:flex;flex-direction:column;gap:4px;font-size:12px;line-height:1.5}
+.school-credit div[lang=ar]{font-size:14px}.school-credit strong{font-size:13px}.school-credit div[lang=ar] strong{font-size:14px}
+.charter-panel{background:#f8f5f0;border:1px solid #d7c7b4;border-radius:24px;padding:22px;color:#423b34;box-shadow:0 12px 35px #35271b13}
+.charter-heading{display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1px solid #d7c7b4}.charter-heading>img{width:60px;height:auto;mix-blend-mode:multiply}
+.charter-heading h2{font-size:20px;margin:0;color:#702a2e}.charter-heading p{font-size:12px;margin:5px 0 0}
+.charter-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #e6ded3;text-align:right}
+.charter-item>div{display:flex;flex-direction:column;flex:1}.charter-item small{font-size:10px;color:#85735c}.charter-item strong{font-size:18px;font-family:Tahoma,Arial,sans-serif;margin:2px 0}.charter-item span{font-size:12px;color:#5b625c}
+.charter-item img{width:54px;height:54px;object-fit:contain;mix-blend-mode:multiply}
+.charter-foot{font-size:12px;line-height:1.45;text-align:center;margin:15px 0 0;color:#736050}
+.creator-credit{display:block;font-size:10px;font-weight:400;letter-spacing:0;line-height:1.5;margin:2px 0 5px;color:#68746e}
+.science-keyword{color:#a62c36;font-weight:850}
+.sharing-dialogue{position:absolute;top:14%;left:50%;transform:translateX(-50%);width:min(580px,calc(100vw - 510px));padding:15px 22px;background:#fffaf2f5;border:1px solid #cfb48b;border-radius:22px;box-shadow:0 8px 30px #203b4030;text-align:center;pointer-events:auto}
+.sharing-dialogue p{font-size:26px;line-height:1.35;margin:5px 0}.sharing-dialogue .speaker-name{font-size:14px;color:#51766b}
+.sharing-picture-mode{position:absolute;inset:30% 25% 18%;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:6px solid #cbb28b}
+.sharing-picture-mode img{max-height:100%;width:32%;object-fit:contain}.sharing-hessa{animation:share-walk 5s ease-in-out forwards}.shared-treat{position:absolute;left:32%;bottom:45%;font-size:35px;color:#cd9b62;transition:left 2s}.given .shared-treat{left:77%}
+@keyframes share-walk{0%,20%{transform:translateX(0)}70%,100%{transform:translateX(85%)}}
+@media(max-height:780px) and (min-width:901px){.cover-layout{gap:16px}.cover-layout .title-card{padding:14px 24px}.campaign-line{font-size:24px;margin-bottom:5px}.cover-layout .hero-picture,.cover-layout .hero-picture svg{height:85px}.school-credit{padding:8px 0}.charter-panel{padding:18px}.charter-item{padding:6px 0}.charter-item img{width:48px;height:48px}.cover-layout .title-card>p{margin:5px 0}.cover-layout .title-card h1{font-size:34px}}
+@media(max-width:900px){.cover-layout{grid-template-columns:1fr;max-width:660px;padding:10px 0}.charter-items{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.charter-heading{justify-content:center}.charter-item strong{font-size:15px}.cover-layout .title-card{padding:20px}.sharing-dialogue{width:min(560px,75vw)}.helper-message{left:220px;max-width:calc(100vw - 440px)}}
+@media(prefers-reduced-motion:reduce){.sharing-hessa{animation:none}.shared-treat{transition:none}}

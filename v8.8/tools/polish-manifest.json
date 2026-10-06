@@ -1,0 +1,92 @@
+[
+  {
+    "before": "window.ScienceGame=Xt,window.ScienceUI.init(Xt)",
+    "after": "window.ScienceGame=Xt,Xt.voiceEngine=Fe,Xt.startSharing=startSharingScene,window.ScienceUI.init(Xt)",
+    "occurrences": 1
+  },
+  {
+    "before": "i(\"#overlay\").innerHTML=y,D=!1",
+    "after": "i(\"#overlay\").innerHTML=y,window.ScienceUI?.enhance(),D=!1",
+    "occurrences": 1
+  },
+  {
+    "before": "ze(),x?.warm();await window.CharacterModelsReady;",
+    "after": "ze();await window.CharacterModelsReady;",
+    "occurrences": 1
+  },
+  {
+    "before": "if(modelStatus?.failed.length)C(",
+    "after": "x?.warm();Fe.preload();if(modelStatus?.failed.length)C(",
+    "occurrences": 1
+  },
+  {
+    "before": "e===\"low\"?1.25:2",
+    "after": "e===\"high\"?2:1.25",
+    "occurrences": 1
+  },
+  {
+    "before": "this.ambient(n),this.director.update(n)",
+    "after": "this.ambient(n),window.CharacterModels?.updateSharing(this,n),this.director.update(n)",
+    "occurrences": 1
+  },
+  {
+    "before": "x?.talk(y),Le(`<section class=\"speech-anchor",
+    "after": "x?.talk(y),x&&window.CharacterModels?.dialogueCamera(x,y),Le(`<section class=\"speech-anchor",
+    "occurrences": 1
+  },
+  {
+    "before": "return Y>=4&&!(L?.busy&&Y<8)?!0:Fe.lastFailure||u.muted?Y>=Math.min(E,4):Y>=.7&&!L?.busy",
+    "after": "return L?.busy?!1:Fe.lastFailure||u.muted?Y>=Math.min(E,4):Y>=.9",
+    "occurrences": 1
+  },
+  {
+    "before": "new C({sampleRate:24e3})",
+    "after": "new C({sampleRate:24e3,latencyHint:\"interactive\"})",
+    "occurrences": 1
+  },
+  {
+    "before": "this.src=S,S.start(),clearTimeout(this.timer),this.timer=setTimeout(fin,B.duration*1e3+1500)",
+    "after": "this.src=S,S.playbackRate.value=s===\"Me\"?.96:1,S.start(),clearTimeout(this.timer),this.timer=setTimeout(fin,B.duration/S.playbackRate.value*1e3+1500)",
+    "occurrences": 1
+  },
+  {
+    "before": "if(y.type===\"share\"){x?.setPose(\"hold\"),tt(\"Grandpa\",\"Please share with Hamad.\",'<button data-action=\"share-reply\" class=\"primary\">Here you are!</button>');return}",
+    "after": "if(y.type===\"share\"){window.CharacterModels?.setupSharing(x);Le('<div></div>');window.ScienceUI.sharingPanel(\"Dad\",\"Please share with Hamad.\");i(\"#sharing-dialogue\").insertAdjacentHTML(\"beforeend\",'<button data-action=\"share-reply\" class=\"primary\">Share with Hamad</button>');Oe(\"Please share with Hamad.\",null,!0,\"Dad\");return}if(y.type===\"sharing\"){startSharingScene();return}",
+    "occurrences": 1
+  },
+  {
+    "before": "else if(P===\"share-reply\")f[c.step]={type:\"reply-shown\",text:\"Here you are!\"},$t();",
+    "after": "else if(P===\"share-reply\")startSharingScene();",
+    "occurrences": 1
+  },
+  {
+    "before": "[\"reply\",\"reply-shown\",\"share\"].includes(P.type)",
+    "after": "[\"reply\",\"reply-shown\"].includes(P.type)",
+    "occurrences": 1
+  },
+  {
+    "before": "else if(P.type===\"notice\"&&Ye(Y,2))",
+    "after": "else if(P.type===\"share\"&&Y>=6&&!L?.busy)startSharingScene();else if(P.type===\"notice\"&&Ye(Y,2))",
+    "occurrences": 1
+  },
+  {
+    "before": "P?.type!==\"notebook\"&&!L?.busy&&!d",
+    "after": "![\"notebook\",\"share\",\"sharing\"].includes(P?.type)&&!L?.busy&&!d",
+    "occurrences": 1
+  },
+  {
+    "before": "c.elapsed>=Z()&&c.challengeStarted===null&&!L?.busy&&!d",
+    "after": "c.elapsed>=Z()&&c.challengeStarted===null&&![\"share\",\"sharing\"].includes(c.activeType)&&!L?.busy&&!d",
+    "occurrences": 1
+  },
+  {
+    "before": "function qt(){",
+    "after": "function startSharingScene(){\nif(c.activeType===\"sharing\"&&x?.sharing?.playing)return;\nUe();d=null;c.activeType=\"sharing\";f[c.step]={type:\"sharing\"};c.sequence=f;\nLe('<div></div>');window.ScienceUI.sharingPanel(\"Mom\",\"Take a marshmallow to Hamad.\");\nconst scene=c.scene,step=c.step,done=()=>{if(c.scene!==scene||c.step!==step||c.activeType!==\"sharing\")return;window.CharacterModels?.cancelSharing(x);c.respect.push(\"Here you are!\");ge(\"shared_marshmallow\",{with:\"Hamad\"});re();};\nconst callbacks={say:(speaker,text)=>{window.ScienceUI.sharingPanel(speaker,text);Oe(text,null,!0,speaker)},done};\nif(!window.CharacterModels?.startSharing(x,callbacks)){\n let elapsed=0,last=performance.now(),offered=false,thanked=false;\n const frame=now=>{if(c.scene!==scene||c.step!==step||c.activeType!==\"sharing\")return;if(!c.paused)elapsed+=(now-last)/1000;last=now;if(elapsed>=5.1&&!offered){offered=true;callbacks.say(\"Me\",\"Here you are!\")}if(elapsed>=6.6&&!thanked){thanked=true;callbacks.say(\"Brother\",\"Thank you, Hessa!\")}if(elapsed>=10&&!L?.busy){done();return}requestAnimationFrame(frame)};requestAnimationFrame(frame);\n}\n}\nfunction qt(){",
+    "occurrences": 1
+  },
+  {
+    "before": "t.userData.sitting=!0,t.rotation.y=0)}}setPose",
+    "after": "t.userData.sitting=[\"Grandma\",\"Grandpa\",\"Brother\"].includes(t.userData.name),t.rotation.y=t.userData.name===\"Brother\"?-Math.PI/2:0)}window.CharacterModels?.prepareScene(this,4)}setPose",
+    "occurrences": 1
+  }
+]

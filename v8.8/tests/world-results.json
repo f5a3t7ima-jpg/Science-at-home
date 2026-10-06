@@ -1,0 +1,1717 @@
+[
+  {
+    "name": "Cushion contact: Grandma",
+    "ok": true,
+    "data": {
+      "min": [
+        -11.124674517810178,
+        0.4179999923487321,
+        -12.454303454326832
+      ],
+      "max": [
+        -10.497619778365673,
+        1.3057115579312297,
+        -11.781387076385755
+      ],
+      "offset": 0.6089358043697451
+    }
+  },
+  {
+    "name": "Seated clip: Grandma",
+    "ok": true
+  },
+  {
+    "name": "Cushion contact: Grandpa",
+    "ok": true,
+    "data": {
+      "min": [
+        -7.619421500132997,
+        0.41800002488451027,
+        -12.487175646953672
+      ],
+      "max": [
+        -6.981917774606153,
+        1.373656380511821,
+        -11.731650702425085
+      ],
+      "offset": 0.6615773479449871
+    }
+  },
+  {
+    "name": "Seated clip: Grandpa",
+    "ok": true
+  },
+  {
+    "name": "Cushion contact: Brother",
+    "ok": true,
+    "data": {
+      "min": [
+        -5.030703453979031,
+        0.4180000029106828,
+        -10.93107274239735
+      ],
+      "max": [
+        -4.480275793521333,
+        1.1932493632323498,
+        -10.441142244202485
+      ],
+      "offset": -0.609774311284756
+    }
+  },
+  {
+    "name": "Seated clip: Brother",
+    "ok": true
+  },
+  {
+    "name": "Hamad faces into the majlis",
+    "ok": true
+  },
+  {
+    "name": "Sharing route clear 120",
+    "ok": true,
+    "data": [
+      7.442721589291132,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 121",
+    "ok": true,
+    "data": [
+      7.459139310430099,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 122",
+    "ok": true,
+    "data": [
+      7.475557031569066,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 123",
+    "ok": true,
+    "data": [
+      7.491974752708033,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 124",
+    "ok": true,
+    "data": [
+      7.508392473847,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 125",
+    "ok": true,
+    "data": [
+      7.524810194985966,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 126",
+    "ok": true,
+    "data": [
+      7.541227916124933,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 127",
+    "ok": true,
+    "data": [
+      7.557645637263899,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 128",
+    "ok": true,
+    "data": [
+      7.574063358402866,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 129",
+    "ok": true,
+    "data": [
+      7.590481079541833,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 130",
+    "ok": true,
+    "data": [
+      7.6068988006808,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 131",
+    "ok": true,
+    "data": [
+      7.623316521819767,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 132",
+    "ok": true,
+    "data": [
+      7.639734242958734,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 133",
+    "ok": true,
+    "data": [
+      7.656151964097701,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 134",
+    "ok": true,
+    "data": [
+      7.672569685236667,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 135",
+    "ok": true,
+    "data": [
+      7.688987406375634,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 136",
+    "ok": true,
+    "data": [
+      7.7054051275146005,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 137",
+    "ok": true,
+    "data": [
+      7.721822848653567,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 138",
+    "ok": true,
+    "data": [
+      7.738240569792534,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 139",
+    "ok": true,
+    "data": [
+      7.754658290931501,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 140",
+    "ok": true,
+    "data": [
+      7.771076012070468,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 141",
+    "ok": true,
+    "data": [
+      7.787493733209435,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 142",
+    "ok": true,
+    "data": [
+      7.803911454348402,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 143",
+    "ok": true,
+    "data": [
+      7.820329175487368,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 144",
+    "ok": true,
+    "data": [
+      7.836746896626335,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 145",
+    "ok": true,
+    "data": [
+      7.853164617765302,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 146",
+    "ok": true,
+    "data": [
+      7.8695823389042685,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 147",
+    "ok": true,
+    "data": [
+      7.886000060043235,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 148",
+    "ok": true,
+    "data": [
+      7.902417781182202,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 149",
+    "ok": true,
+    "data": [
+      7.918835502321169,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 150",
+    "ok": true,
+    "data": [
+      7.935253223460136,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 151",
+    "ok": true,
+    "data": [
+      7.951670944599102,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 152",
+    "ok": true,
+    "data": [
+      7.968088665738069,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 153",
+    "ok": true,
+    "data": [
+      7.984506386877036,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 154",
+    "ok": true,
+    "data": [
+      8.000924108016003,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 155",
+    "ok": true,
+    "data": [
+      8.01734182915497,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 156",
+    "ok": true,
+    "data": [
+      8.033759550293937,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 157",
+    "ok": true,
+    "data": [
+      8.050177271432903,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 158",
+    "ok": true,
+    "data": [
+      8.06659499257187,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 159",
+    "ok": true,
+    "data": [
+      8.083012713710836,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 160",
+    "ok": true,
+    "data": [
+      8.099430434849804,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 161",
+    "ok": true,
+    "data": [
+      8.11584815598877,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 162",
+    "ok": true,
+    "data": [
+      8.132265877127738,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 163",
+    "ok": true,
+    "data": [
+      8.148683598266704,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 164",
+    "ok": true,
+    "data": [
+      8.165101319405672,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 165",
+    "ok": true,
+    "data": [
+      8.181519040544638,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 166",
+    "ok": true,
+    "data": [
+      8.197936761683604,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 167",
+    "ok": true,
+    "data": [
+      8.214354482822571,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 168",
+    "ok": true,
+    "data": [
+      8.230772203961537,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 169",
+    "ok": true,
+    "data": [
+      8.247189925100505,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 170",
+    "ok": true,
+    "data": [
+      8.263607646239471,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 171",
+    "ok": true,
+    "data": [
+      8.280025367378439,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 172",
+    "ok": true,
+    "data": [
+      8.296443088517405,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 173",
+    "ok": true,
+    "data": [
+      8.312860809656371,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 174",
+    "ok": true,
+    "data": [
+      8.329278530795339,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 175",
+    "ok": true,
+    "data": [
+      8.345696251934305,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 176",
+    "ok": true,
+    "data": [
+      8.362113973073273,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 177",
+    "ok": true,
+    "data": [
+      8.378531694212239,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 178",
+    "ok": true,
+    "data": [
+      8.394949415351206,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 179",
+    "ok": true,
+    "data": [
+      8.411367136490172,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 180",
+    "ok": true,
+    "data": [
+      8.427784857629138,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 181",
+    "ok": true,
+    "data": [
+      8.444202578768106,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 182",
+    "ok": true,
+    "data": [
+      8.460620299907074,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 183",
+    "ok": true,
+    "data": [
+      8.47703802104604,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 184",
+    "ok": true,
+    "data": [
+      8.493455742185006,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 185",
+    "ok": true,
+    "data": [
+      8.509873463323974,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 186",
+    "ok": true,
+    "data": [
+      8.52629118446294,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 187",
+    "ok": true,
+    "data": [
+      8.542708905601906,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 188",
+    "ok": true,
+    "data": [
+      8.559126626740873,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 189",
+    "ok": true,
+    "data": [
+      8.575544347879841,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 190",
+    "ok": true,
+    "data": [
+      8.591962069018807,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 191",
+    "ok": true,
+    "data": [
+      8.608379790157773,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 192",
+    "ok": true,
+    "data": [
+      8.624797511296741,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 193",
+    "ok": true,
+    "data": [
+      8.641215232435707,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 194",
+    "ok": true,
+    "data": [
+      8.657632953574675,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 195",
+    "ok": true,
+    "data": [
+      8.67405067471364,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 196",
+    "ok": true,
+    "data": [
+      8.690468395852609,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 197",
+    "ok": true,
+    "data": [
+      8.706886116991575,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 198",
+    "ok": true,
+    "data": [
+      8.72330383813054,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 199",
+    "ok": true,
+    "data": [
+      8.739721559269508,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 200",
+    "ok": true,
+    "data": [
+      8.756139280408474,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 201",
+    "ok": true,
+    "data": [
+      8.772557001547442,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 202",
+    "ok": true,
+    "data": [
+      8.788974722686408,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 203",
+    "ok": true,
+    "data": [
+      8.805392443825376,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 204",
+    "ok": true,
+    "data": [
+      8.821810164964342,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 205",
+    "ok": true,
+    "data": [
+      8.838227886103308,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 206",
+    "ok": true,
+    "data": [
+      8.854645607242276,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 207",
+    "ok": true,
+    "data": [
+      8.871063328381242,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 208",
+    "ok": true,
+    "data": [
+      8.88748104952021,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 209",
+    "ok": true,
+    "data": [
+      8.903898770659175,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 210",
+    "ok": true,
+    "data": [
+      8.920316491798143,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 211",
+    "ok": true,
+    "data": [
+      8.93673421293711,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 212",
+    "ok": true,
+    "data": [
+      8.953151934076077,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 213",
+    "ok": true,
+    "data": [
+      8.969569655215043,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 214",
+    "ok": true,
+    "data": [
+      8.98598737635401,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 215",
+    "ok": true,
+    "data": [
+      9.002405097492977,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 216",
+    "ok": true,
+    "data": [
+      9.018822818631943,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 217",
+    "ok": true,
+    "data": [
+      9.03524053977091,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 218",
+    "ok": true,
+    "data": [
+      9.051658260909877,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 219",
+    "ok": true,
+    "data": [
+      9.068075982048844,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 220",
+    "ok": true,
+    "data": [
+      9.08449370318781,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 221",
+    "ok": true,
+    "data": [
+      9.100911424326778,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 222",
+    "ok": true,
+    "data": [
+      9.117329145465744,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 223",
+    "ok": true,
+    "data": [
+      9.13374686660471,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 224",
+    "ok": true,
+    "data": [
+      9.150164587743678,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 225",
+    "ok": true,
+    "data": [
+      9.166582308882644,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 226",
+    "ok": true,
+    "data": [
+      9.183000030021612,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 227",
+    "ok": true,
+    "data": [
+      9.199417751160578,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 228",
+    "ok": true,
+    "data": [
+      9.215835472299545,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 229",
+    "ok": true,
+    "data": [
+      9.232253193438511,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 230",
+    "ok": true,
+    "data": [
+      9.24867091457748,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 231",
+    "ok": true,
+    "data": [
+      9.265088635716445,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 232",
+    "ok": true,
+    "data": [
+      9.281506356855413,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 233",
+    "ok": true,
+    "data": [
+      9.297924077994379,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 234",
+    "ok": true,
+    "data": [
+      9.314341799133345,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 235",
+    "ok": true,
+    "data": [
+      9.330759520272313,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 236",
+    "ok": true,
+    "data": [
+      9.347177241411279,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 237",
+    "ok": true,
+    "data": [
+      9.363594962550245,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 238",
+    "ok": true,
+    "data": [
+      9.380012683689213,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 239",
+    "ok": true,
+    "data": [
+      9.39643040482818,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 240",
+    "ok": true,
+    "data": [
+      9.412848125967146,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 241",
+    "ok": true,
+    "data": [
+      9.429265847106114,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 242",
+    "ok": true,
+    "data": [
+      9.44568356824508,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 243",
+    "ok": true,
+    "data": [
+      9.462101289384048,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 244",
+    "ok": true,
+    "data": [
+      9.478519010523014,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 245",
+    "ok": true,
+    "data": [
+      9.49493673166198,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 246",
+    "ok": true,
+    "data": [
+      9.511354452800948,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 247",
+    "ok": true,
+    "data": [
+      9.527772173939914,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 248",
+    "ok": true,
+    "data": [
+      9.544189895078881,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 249",
+    "ok": true,
+    "data": [
+      9.560607616217847,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 250",
+    "ok": true,
+    "data": [
+      9.577025337356815,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 251",
+    "ok": true,
+    "data": [
+      9.593443058495781,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 252",
+    "ok": true,
+    "data": [
+      9.609860779634747,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 253",
+    "ok": true,
+    "data": [
+      9.626278500773715,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 254",
+    "ok": true,
+    "data": [
+      9.642696221912683,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 255",
+    "ok": true,
+    "data": [
+      9.659113943051649,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 256",
+    "ok": true,
+    "data": [
+      9.675531664190615,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 257",
+    "ok": true,
+    "data": [
+      9.691949385329583,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 258",
+    "ok": true,
+    "data": [
+      9.708367106468549,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 259",
+    "ok": true,
+    "data": [
+      9.724784827607515,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 260",
+    "ok": true,
+    "data": [
+      9.741202548746482,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 261",
+    "ok": true,
+    "data": [
+      9.75762026988545,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 262",
+    "ok": true,
+    "data": [
+      9.774037991024416,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 263",
+    "ok": true,
+    "data": [
+      9.790455712163382,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 264",
+    "ok": true,
+    "data": [
+      9.80687343330235,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 265",
+    "ok": true,
+    "data": [
+      9.823291154441316,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 266",
+    "ok": true,
+    "data": [
+      9.839708875580284,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 267",
+    "ok": true,
+    "data": [
+      9.85612659671925,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 268",
+    "ok": true,
+    "data": [
+      9.872544317858218,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 269",
+    "ok": true,
+    "data": [
+      9.888962038997184,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 270",
+    "ok": true,
+    "data": [
+      9.90537976013615,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 271",
+    "ok": true,
+    "data": [
+      9.921797481275117,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 272",
+    "ok": true,
+    "data": [
+      9.938215202414083,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 273",
+    "ok": true,
+    "data": [
+      9.954632923553051,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 274",
+    "ok": true,
+    "data": [
+      9.971050644692017,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 275",
+    "ok": true,
+    "data": [
+      9.987468365830985,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 276",
+    "ok": true,
+    "data": [
+      10.00388608696995,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 277",
+    "ok": true,
+    "data": [
+      10.020303808108917,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 278",
+    "ok": true,
+    "data": [
+      10.036721529247885,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 279",
+    "ok": true,
+    "data": [
+      10.05313925038685,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 280",
+    "ok": true,
+    "data": [
+      10.069556971525818,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 281",
+    "ok": true,
+    "data": [
+      10.085974692664784,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 282",
+    "ok": true,
+    "data": [
+      10.102392413803752,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 283",
+    "ok": true,
+    "data": [
+      10.118810134942718,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 284",
+    "ok": true,
+    "data": [
+      10.135227856081686,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 285",
+    "ok": true,
+    "data": [
+      10.151645577220652,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 286",
+    "ok": true,
+    "data": [
+      10.16806329835962,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 287",
+    "ok": true,
+    "data": [
+      10.184481019498586,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 288",
+    "ok": true,
+    "data": [
+      10.200898740637552,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 289",
+    "ok": true,
+    "data": [
+      10.21731646177652,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 290",
+    "ok": true,
+    "data": [
+      10.233734182915486,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 291",
+    "ok": true,
+    "data": [
+      10.250151904054452,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 292",
+    "ok": true,
+    "data": [
+      10.26656962519342,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 293",
+    "ok": true,
+    "data": [
+      10.282987346332387,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 294",
+    "ok": true,
+    "data": [
+      10.299405067471353,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 295",
+    "ok": true,
+    "data": [
+      10.315822788610319,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 296",
+    "ok": true,
+    "data": [
+      10.332240509749287,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 297",
+    "ok": true,
+    "data": [
+      10.348658230888253,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 298",
+    "ok": true,
+    "data": [
+      10.36507595202722,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing route clear 299",
+    "ok": true,
+    "data": [
+      10.381493673166187,
+      0,
+      6.5
+    ]
+  },
+  {
+    "name": "Sharing line",
+    "ok": true,
+    "speaker": "Me",
+    "text": "Here you are!"
+  },
+  {
+    "name": "Sharing line",
+    "ok": true,
+    "speaker": "Brother",
+    "text": "Thank you, Hessa!"
+  },
+  {
+    "name": "Hamad holds marshmallow after handover",
+    "ok": true
+  },
+  {
+    "name": "Thank-you occurs once",
+    "ok": true
+  },
+  {
+    "name": "Sharing completes",
+    "ok": true
+  },
+  {
+    "name": "Cutscene cleans up",
+    "ok": true
+  }
+]
